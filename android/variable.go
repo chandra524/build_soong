@@ -97,8 +97,8 @@ type variableProperties struct {
 			Enabled *bool
 		}
 
-		// include CypherOS variables
-		*android.Product_variables
+		// include aoscp variables
+		Aoscp android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -173,8 +173,8 @@ type productVariables struct {
 
 	DeviceKernelHeaders []string `json:",omitempty"`
 
-	// include CypherOS variables
-	*android.ProductVariables
+	// include aoscp variables
+	Aoscp android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
